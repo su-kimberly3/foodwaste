@@ -1,0 +1,987 @@
+*{
+    font-family: PT Serif, Static;
+}
+
+.bg{
+    background-color: #b4e987;
+}
+
+h1, h2 {
+    color: #365a14;
+}
+
+/* nav */
+.navbar {
+    min-height: 80px;
+    background-color: #365a14;
+}
+
+.logo {
+    width: 15vh;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    background-image: url('../media/hamburger-menu-icon-svg-17.jpg') !important;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link.active {
+    color: #8eb768 !important;
+    text-decoration: underline !important;
+}
+
+#home, #about, #waste, #fact, #solution, #contact {
+    color: white;
+    text-decoration: none;
+}
+
+#home:hover, #about:hover, #waste:hover, #fact:hover, #solution:hover, #contact:hover {
+    color: #8eb768;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+.dropdown-menu {
+    background-color: #a7e174 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #365a14 !important;
+    color: white !important;
+}
+
+
+
+
+/* banner */
+#banner-home {
+    width: 100%;
+    background-image: url('../media/Circle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#text-box {
+    background-color: rgba(252, 252, 252, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    min-height: 500px;
+    width: 100%;
+}
+
+#text-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.banner-img {
+    min-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { 
+        transform: translateY(0px); 
+    }
+
+    50% { 
+        transform: translateY(-20px); 
+    }
+
+    100% { 
+        transform: translateY(0px);
+    }
+}
+
+#banner-title {
+    color: #2c8a4f;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#banner-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Animations */
+#banner-text, #imgbanner, .title {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.8s ease-out forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    #banner-home {
+        padding: 3rem 0;
+        min-height: auto;
+    }
+    
+    .banner-img {
+        max-height: 400px;
+        margin-bottom: 2rem;
+    }
+    
+    #text-box {
+        margin-top: 0;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner-home {
+        background-position: left center;
+        padding: 2rem 0;
+    }
+    
+    #text-box {
+        padding: 1.5rem;
+        min-width: 100%;
+        /* height:768px ; */
+    }
+    
+    #banner-title {
+        font-size: 1.75rem;
+    }
+    
+    #banner-text {
+        font-size: 1rem;
+    }
+    
+   #imgbanner {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #banner-home {
+        padding: 1.5rem 0;
+    }
+    
+    #text-box {
+        padding: 1rem;
+    }
+    
+    .banner-img {
+        max-height: 280px;
+    }
+    
+    #banner-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* aim */
+#aim .card{
+    background-color: #b4e987;
+    border: none;
+}
+
+#aim .card-text{
+    text-align: justify;
+}
+
+.aim-img{
+    width: 50vh;
+    height: auto;
+    margin-left: 20vh;
+    margin-top: 5vh;
+}
+
+#btn-aim{
+    width: auto;
+    height: 6vh;
+    border: 1px solid #365a14;
+    margin-right: 20vh ;
+    transition-duration: 0.4s; 
+}
+
+#btn-aim a{
+    color: #365a14;
+}
+
+#btn-aim a:hover{
+    color: #365a14;
+    width: 22vh;
+}
+
+#btn-aim .icon:hover{
+    animation: move 2s infinite ease;
+
+}
+
+#aim .card-text{
+    text-indent: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #foodwaste-content, #fwi {
+        width: 100%; 
+    }
+}
+
+/* def */
+
+#foodwaste-M{       
+    display: flex;
+    margin: 30px auto;
+}
+
+#foodwaste-M .card{
+    background-color: rgb(124, 239, 177);
+}
+
+.img-section{
+    flex-grow: 1;
+}
+
+.img-section img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#foodwaste-content{
+    padding: 40px;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+#foodwaste-content .card-text{
+    text-indent: 20px;
+    padding-top: 10px;
+}
+
+#foodwaste-btn .icon:hover{
+    animation: move 2s infinite ease;
+
+}
+
+#foodwaste-btn{
+    width: 20vh;
+    height: 6vh;
+    border: 1px solid #365a14;
+    margin-right: 20vh ;
+    color: #365a14;
+    transition-duration: 0.4s;
+}
+
+#foodwaste-btn a{
+    color: #365a14;
+}
+
+#foodwaste-btn:hover{
+    color: #030303;
+    width: 22vh;
+}
+
+@media screen and (max-width: 800px) {
+    #foodwaste-content, #fwi {
+        width: 100%; 
+    }
+}
+
+/* gallery */
+
+#gallery .card-img-top{
+    height: 30vh;
+    object-fit: cover;
+}
+
+.hover-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.hover-card:hover {
+    transform: scale(1.02);
+}
+
+.hover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hover-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-card:hover .card-body {
+    opacity: 1;
+}
+
+/* tips */
+#tips-home{
+    background-image:url(../media/tips-background.jpg);
+    background-size: cover;
+    opacity: 0.9;
+}
+
+#tips-home .card-img-top{
+    height: 30vh;
+    object-fit: cover;
+}
+
+#card-tip1, #card-tip2, #card-tip3, #card-tip4{
+    background-color: #365a14;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+
+#card-tip1:hover, #card-tip2:hover, #card-tip3:hover, #card-tip4:hover {
+    border: 2px solid #b4e987;
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#card-text1, #card-text2, #card-text3, #card-text4{
+    color: white;
+    transition: all 0.5s;
+}
+
+#card-text1:hover, #card-text2:hover, #card-text3:hover, #card-text4:hover{
+    color: #b4e987;
+}
+
+/* about */
+
+/* banner */
+
+#banner-about{
+    height: 70vh;
+    background-image: url(../media/banner-about.jpg);;
+}
+
+#banner-about .bg-blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(35, 34, 34, 0.8);
+}
+
+#banner-about h1, p{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+.about-card {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: none;
+    background-color: rgb(54, 90, 20, 0.7);
+}
+        
+.about-card:hover {
+    transform: translateY(-10px);
+}
+        
+.about-card .card-title {
+    padding-bottom: 10px;
+}
+
+/* mission, vision, benefits */
+#mvb{
+    background-color: #E1EEBC;
+}
+
+#mvb .card{
+    background-color: #E1EEBC;
+    border: none;
+    padding: 40px;
+}
+
+/* mission */
+#mission{
+    list-style: none;
+}
+
+#mission li{
+    background-image: url(../media/logo.png);
+    background-size: 50px 50px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.mission-card{
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: none;
+    background-color: rgb(54, 90, 20, 0.7);
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+/* vision */
+#vision{
+    list-style: none;
+}
+
+#vision li{
+    padding-left: 30px;
+    margin-bottom: 10px;
+    background-image: url(../media/eyeglasses.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+}
+
+/* members */
+.member-img {
+    width: 100%;
+    min-height: 30vh;
+    object-fit: cover;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.member-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.member-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.member-role {
+    font-size: 1rem;
+}
+
+/* benefits  */
+#Benefits{
+    list-style-type: none;
+
+}
+#Benefits li{
+    padding-left: 50px;
+    margin-bottom: 10px;
+    background-image: url(../media/star-fill.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+}
+    
+
+
+
+/* expiration date */
+
+/* banner */
+#banner-expire {
+    height: 80vh;
+    min-height: 400px;
+    background-image: url(../media/expire2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#banner-expire .bg-blur {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+
+#banner-expire h1 {
+    font-size: 2.5rem;
+}
+
+#banner-expire p {
+    margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #banner-expire .bg-blur,#banner-plate .bg-blur, #banner-production .bg-blur, #banner-spoilage .bg-blur{
+        width: 85%;
+    }
+    
+    #banner-expire h1, #banner-plate h1, #banner-production h1, #banner-spoilage h1{
+        font-size: 2rem;
+    }
+    
+    #banner-expire p, #banner-plate p, #banner-production p, #banner-spoilage p {
+        font-size: 1.3rem !important;
+        padding: 10px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner-expire .bg-blur, #banner-plate .bg-blur, #banner-production .bg-blur, #banner-spoilage .bg-blur{
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 576px) {
+    #banner-expire, #banner-plate, #banner-production, #banner-spoilage{
+        min-height: 300px;
+        padding: 10px;
+    }
+    
+    #banner-expire h1, #banner-plate h1, #banner-production h1, #banner-spoilage h1{
+        font-size: 1.8rem;
+        padding-top: 0.5rem !important;
+    }
+    
+    #banner-expire .bg-blur, #banner-plate .bg-blur, #banner-production .bg-blur, #banner-spoilage .bg-blur{
+        width: 95%;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #banner-expire p, #banner-plate p, #banner-production p, #banner-spoilage p{
+        font-size: 1.1rem !important;
+        padding: 5px !important;
+    }
+}
+
+/* info */
+#info-expire{
+    background-color: #E1EEBC;
+}
+
+/* Card Styles */
+.expire-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: white;
+}
+        
+.expire-card:hover {
+    transform: translateY(-10px);
+}
+        
+.expire-card .card-title {
+    color: #4CAF50;
+    font-weight: bold;
+    border-bottom: 3px solid #FFC107;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.def-card{
+    height: auto;
+}
+
+.def-card img{
+    height: 45vh;
+    width: 100%;
+    object-fit: cover;
+}
+        
+/* Date type */
+#data-type {
+    min-height: fit-content;
+}
+
+.use {
+    background-color: rgba(170, 244, 161, 0.8);
+    height: 100%;
+}
+ 
+.sell {
+    background-color: rgba(237, 224, 121, 0.8);
+    height: 100%;
+}
+
+.date-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+        
+.sell-by {
+    background-color: #e4b31e;
+    color: #212529;
+}
+        
+.use-by {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .use, .sell {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .use, .sell {
+        height: auto;
+    }
+}
+        
+/* Tip Items */        
+.tip-expire{
+    padding: 15px 15px 15px 80px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+        
+.tip-expire:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+        
+.tip-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+        
+/* Individual Tip Colors */
+.tip-coffee .tip-icon {
+    background-color: #6F4E37;
+}
+        
+.tip-flour .tip-icon {
+    background-color: #F5DEB3;
+    color: #8B4513;
+}
+        
+.tip-milk .tip-icon {
+    background-color: #87CEEB;
+    color: #1E90FF;
+}
+        
+.tip-avocado .tip-icon {
+    background-color: #98FB98;
+    color: #228B22;
+}
+        
+.tip-bread .tip-icon {
+    background-color: #FFD700;
+    color: #DAA520;
+}
+
+.video-section {
+    padding: 3rem 0;
+}
+        
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+        
+.section-header h2 {
+    font-weight: 700;
+    color: #4CAF50;
+    position: relative;
+    display: inline-block;
+}   
+        
+.video-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    height: 100%;
+    border: none;
+}
+        
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+        
+.video-header {
+    padding: 1.5rem 1.5rem 0;
+}
+        
+.video-header h3 {
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+        
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+        
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+        
+
+
+/* plate waste  */
+
+/* banner */
+#banner-plate{
+    height: 80vh;
+    background-image: url(../media/plate_waste1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#banner-plate .bg-blur{
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+
+#banner-plate h1 {
+    font-size: 2.5rem;
+}
+
+#banner-plate p {
+    margin-bottom: 0;
+}
+
+/* info  */
+#info-plate{
+    background-color:#E1EEBC ;
+}
+
+#info-plate .card{
+    background-color: #E1EEBC;
+
+}
+#plate_def{
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+/* Portion Size  */
+#portion_size{
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+/* food production */
+#banner-production{
+    height: 80vh;
+    background-image: url(../media/production3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#banner-production .bg-blur{
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+
+#banner-production h1 {
+    font-size: 2.5rem;
+}
+
+#banner-production p {
+    margin-bottom: 0;
+}
+
+#info-production{
+    background-color: #E1EEBC;
+}
+
+#info-production .card{
+    background-color: #E1EEBC;
+}
+
+#tips-type-production{
+    height: auto;
+}
+
+#tips-type-production .card{
+    background-color: #a7e174;
+}
+
+/* spoilage */
+.modal-header{
+    background-color: #365a14;
+}
+.spoilage .card-img img{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.spoilage #types_spoilage .card{
+    background-color: #365a14;
+    transition: all 0.5s ease;
+}
+
+#info-spoilage #types_spoilage .card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#banner-spoilage{
+    height: 80vh;
+    background-image: url(../media/spoilage5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+#banner-spoilage .bg-blur{
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+
+#banner-spoilage h1 {
+    font-size: 2.5rem;
+}
+
+#banner-spoilage p {
+    margin-bottom: 0;
+}
+
+.spoilage{
+    background-color: #E1EEBC;
+}
+
+.spoilage .card{
+    background-color: #E1EEBC;
+} 
+
+/* .tips_spoilage{
+    list-style-image: url(../media/logo.png);
+} */
+
+
+/* footer */
+.footer{
+    height: auto;
+    background-color: #365a14;
+}
+
+.logo-footer{
+    width: 30vh;
+}
+
+#btn-footer{
+    color: white;
+    border: 2px solid #a7e174;
+}
+
+#btn-footer:hover{
+    background-color: #a7e174;
+    color: black;
+    transition: all 1s;
+}
+
+@media (min-width: 768px) {
+    .sell-by{
+        height: auto;
+    }
+}
+
+@keyframes move {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
